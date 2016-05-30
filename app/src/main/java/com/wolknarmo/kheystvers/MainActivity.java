@@ -1,114 +1,120 @@
 package com.wolknarmo.kheystvers;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-	private FragmentManager fragmentManager;
-//	private RecyclerView mRecyclerView;
-//	private RecyclerView.Adapter mAdapter;
-//	private RecyclerView.LayoutManager mLayoutManager;
-//
-//	private List<Drawable> dummyStuff1 = new ArrayList<>();
-//	private List<Drawable> dummyStuff2 = new ArrayList<>();
-//	private List<Drawable> dummyStuff3 = new ArrayList<>();
-//
-//	private MyAdapter dummyStuffAdapterOne;
-//	private MyAdapter dummyStuffAdapterTwo;
-//	private MyAdapter dummyStuffAdapterThree;
-
-	Fragment f1;
-	Fragment f2;
-	Fragment f3;
-	Fragment f4;
+	DrawerLayout drawer;
+	FragmentManager fragmentManager;
+	ActionBarDrawerToggle drawerToggle;
+	NavigationView navigationView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		f1 = new Dummy1();
-		f2 = new Dummy2();
-		f3 = new TextFragment();
-		f4 = new ImageFragment();
+		drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 		fragmentManager = getFragmentManager();
-		fragmentManager.beginTransaction().replace(R.id.content, f1).commit();
 
-//		mRecyclerView = (RecyclerView) findViewById(R.id.recycler_example);
-//		LinearLayoutManager llm = new LinearLayoutManager(this);
-//		mRecyclerView.setLayoutManager(llm);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		getSupportActionBar().setHomeButtonEnabled(true);
 
-//		mLayoutManager = new LinearLayoutManager(this);
-//		mRecyclerView.setLayoutManager(mLayoutManager);
+		drawerToggle = new ActionBarDrawerToggle(this, drawer, R.string.open_drawer, R.string.close_drawer) {
+			@Override
+			public void onDrawerClosed(View view) {
+				super.onDrawerClosed(view);
+			}
 
-//		initDummyStuff();
+			@Override
+			public void onDrawerOpened(View drawerView) {
+				super.onDrawerOpened(drawerView);
+			}
+		};
 
-//		dummyStuffAdapterOne = new MyAdapter(getResources().getStringArray(R.array.syrups), dummyStuff1);
-//		dummyStuffAdapterTwo = new MyAdapter(getResources().getStringArray(R.array.syrups2), dummyStuff2);
-//		dummyStuffAdapterThree = new MyAdapter(getResources().getStringArray(R.array.syrups3), dummyStuff3);
+		getSupportActionBar().setCustomView(R.layout.image);
 
-//		mAdapter = new MyAdapter(getResources().getStringArray(R.array.syrups), dummyStuff1);
-//		mRecyclerView.setAdapter(dummyStuffAdapterOne);
+		drawer.addDrawerListener(drawerToggle);
 
-		NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+		navigationView = (NavigationView) findViewById(R.id.nav_view);
 		navigationView.setNavigationItemSelectedListener(this);
+
+		if (savedInstanceState == null) {
+			selectItem(0);
+		}
 	}
 
 	@Override
 	public void onBackPressed() {
-		DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 		if (drawer.isDrawerOpen(GravityCompat.START)) {
 			drawer.closeDrawer(GravityCompat.START);
 		} else {
-			super.onBackPressed();
+//			super.onBackPressed();
 		}
 	}
 
 	@Override
 	public boolean onNavigationItemSelected(MenuItem item) {
-		if (item.getTitle().equals("Концентраты")) {
-			fragmentManager.beginTransaction().replace(R.id.content, f1).commit();
-		} else if (item.getTitle().equals("Ликеры")) {
-			fragmentManager.beginTransaction().replace(R.id.content, f2).commit();
-		} else if (item.getTitle().equals("Сиропы")) {
-			fragmentManager.beginTransaction().replace(R.id.content, f3).commit();
-		} else if (item.getTitle().equals("Как заказать")) {
-			fragmentManager.beginTransaction().replace(R.id.content, f4).commit();
-		} else if (item.getTitle().equals("Как получить")) {
-
-		}
-
-//		Fragment fragment = new ItemsListFragment();
-//		Bundle args = new Bundle();
-//		args.putString("itemTitle", item.getTitle().toString());
-//		args.putInt("itemId", item.getItemId());
-//		fragment.setArguments(args);
-
-		DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+		selectItem(item.getOrder());
+		getSupportActionBar().setTitle(item.getTitle());
 		drawer.closeDrawer(GravityCompat.START);
 		return true;
 	}
 
-//	private void initDummyStuff() {
-//		dummyStuff1.add(getResources().getDrawable(R.mipmap.s1));
-//		dummyStuff1.add(getResources().getDrawable(R.mipmap.s2));
-//		dummyStuff1.add(getResources().getDrawable(R.mipmap.s3));
-//		dummyStuff1.add(getResources().getDrawable(R.mipmap.s42));
-//
-//		dummyStuff2.add(getResources().getDrawable(R.mipmap.s1k));
-//		dummyStuff2.add(getResources().getDrawable(R.mipmap.s10k));
-//		dummyStuff2.add(getResources().getDrawable(R.mipmap.s65536));
-//		dummyStuff2.add(getResources().getDrawable(R.mipmap.s100k));
-//
-//		dummyStuff3.add(getResources().getDrawable(R.mipmap.s1m));
-//		dummyStuff3.add(getResources().getDrawable(R.mipmap.s1mm));
-//		dummyStuff3.add(getResources().getDrawable(R.mipmap.sg));
-//	}
+	private void selectItem(int position) {
+		Fragment fragment;
+		switch (position) {
+			case 0:
+				fragment = new Dummy1();
+				break;
+			case 1:
+				fragment = new Dummy2();
+				break;
+			case 2:
+				fragment = new TextFragment();
+				break;
+			case 3:
+				fragment = new ImageFragment();
+				break;
+			default:
+				fragment = new Dummy1();
+		}
+		FragmentTransaction ft = fragmentManager.beginTransaction();
+		ft.replace(R.id.content, fragment);
+		ft.addToBackStack(null);
+		ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+		ft.commit();
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if (drawerToggle.onOptionsItemSelected(item)) {
+			return true;
+		} else {
+			return super.onOptionsItemSelected(item);
+		}
+	}
+
+	@Override
+	protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+		super.onPostCreate(savedInstanceState);
+		drawerToggle.syncState();
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		drawerToggle.onConfigurationChanged(newConfig);
+	}
 }
