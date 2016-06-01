@@ -8,19 +8,17 @@
 		<item>Kheystver\'s 42</item>
 		<item>Kheystver\'s 42</item>
 		<item>Kheystver\'s 42</item>
-		<!--<item>Kheystver\'s 1K</item>-->
-		<!--<item>Kheystver\'s 10K</item>-->
-		<!--<item>Kheystver\'s 65536</item>-->
-		<!--<item>Kheystver\'s 100K</item>-->
-		<!--<item>Kheystver\'s 1M</item>-->
-		<!--<item>Kheystver\'s 1MM</item>-->
-		<!--<item>Kheystver\'s Graham</item>-->
 	</string-array>
-	<string-array name="syrups2">
-		<!--<item>Kheystver\'s one</item>-->
-		<!--<item>Kheystver\'s two</item>-->
-		<!--<item>Kheystver\'s three</item>-->
-		<!--<item>Kheystver\'s 42</item>-->
+	<string-array name="syrups_descriptions">
+		<item>descKheystver\'s one Kheystver\'s one Kheystver\'s one Kheystver\'s one Kheystver\'s one Kheystver\'s one</item>
+		<item>descKheystver\'s two Kheystver\'s two Kheystver\'s two Kheystver\'s two Kheystver\'s two Kheystver\'s two</item>
+		<item>descKheystver\'s three Kheystver\'s three Kheystver\'s three Kheystver\'s three Kheystver\'s three Kheystver\'s three</item>
+		<item>descKheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42</item>
+		<item>descKheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42</item>
+		<item>descKheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42</item>
+		<item>descKheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42</item>
+	</string-array>
+	<string-array name="concentrates">
 		<item>Kheystver\'s 1K</item>
 		<item>Kheystver\'s 10K</item>
 		<item>Kheystver\'s 65536</item>
@@ -28,22 +26,33 @@
 		<item>Kheystver\'s 100K</item>
 		<item>Kheystver\'s 100K</item>
 		<item>Kheystver\'s 100K</item>
-		<!--<item>Kheystver\'s 1M</item>-->
-		<!--<item>Kheystver\'s 1MM</item>-->
-		<!--<item>Kheystver\'s Graham</item>-->
 	</string-array>
-	<string-array name="syrups3">
-		<!--<item>Kheystver\'s one</item>-->
-		<!--<item>Kheystver\'s two</item>-->
-		<!--<item>Kheystver\'s three</item>-->
-		<!--<item>Kheystver\'s 42</item>-->
-		<!--<item>Kheystver\'s 1K</item>-->
-		<!--<item>Kheystver\'s 10K</item>-->
-		<!--<item>Kheystver\'s 65536</item>-->
-		<!--<item>Kheystver\'s 100K</item>-->
+	<string-array name="concentrates_descriptions">
+		<item>descKheystver\'s 1K Kheystver\'s 1K Kheystver\'s 1KKheystver\'s 1K Kheystver\'s 1K Kheystver\'s 1K Kheystver\'s 1K</item>
+		<item>descKheystver\'s 10K Kheystver\'s 10K Kheystver\'s 10K Kheystver\'s 10K Kheystver\'s 10K Kheystver\'s 10K Kheystver\'s 10K</item>
+		<item>descKheystver\'s 65536 Kheystver\'s 65536 Kheystver\'s 65536 Kheystver\'s 65536 Kheystver\'s 65536 Kheystver\'s 65536</item>
+		<item>descKheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K </item>
+		<item>descKheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K </item>
+		<item>descKheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K </item>
+		<item>descKheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K Kheystver\'s 100K </item>
+	</string-array>
+	<string-array name="liqueurs">
+		<item>Kheystver\'s Zero</item>
 		<item>Kheystver\'s 1M</item>
 		<item>Kheystver\'s 1MM</item>
 		<item>Kheystver\'s Graham</item>
+		<item>Kheystver\'s Graham</item>
+		<item>Kheystver\'s Graham</item>
+		<item>Kheystver\'s Graham</item>
+	</string-array>
+	<string-array name="liqueurs_description">
+		<item>descKheystver\'s Zero Kheystver\'s Zero Kheystver\'s Zero Kheystver\'s Zero Kheystver\'s Zero Kheystver\'s Zero</item>
+		<item>descKheystver\'s 1M Kheystver\'s 1M Kheystver\'s 1M Kheystver\'s 1M Kheystver\'s 1M Kheystver\'s 1M Kheystver\'s 1M</item>
+		<item>descKheystver\'s 1MM Kheystver\'s 1MMKheystver\'s 1MM Kheystver\'s 1MM Kheystver\'s 1MM Kheystver\'s 1MM </item>
+		<item>descKheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham</item>
+		<item>descKheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham</item>
+		<item>descKheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham</item>
+		<item>descKheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham Kheystver\'s Graham</item>
 	</string-array>
 
 

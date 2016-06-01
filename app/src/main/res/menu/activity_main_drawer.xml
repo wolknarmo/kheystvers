@@ -4,34 +4,40 @@
 	<item android:title="Продукция">
 		<menu>
 			<group android:checkableBehavior="single">
-				<item android:id="@+id/concentrates"
-					  android:icon="@drawable/ic_menu_camera"
-					  android:orderInCategory="0"
-					  android:title="Концентраты"/>
-				<item android:id="@+id/liquors"
-					  android:icon="@drawable/ic_menu_gallery"
-					  android:orderInCategory="1"
-					  android:title="Ликеры"/>
-				<item android:id="@+id/syrups"
-					  android:icon="@drawable/ic_menu_slideshow"
-					  android:orderInCategory="2"
-					  android:title="Сиропы"/>
-				<item android:id="@+id/other"
-					  android:icon="@drawable/ic_menu_manage"
-					  android:orderInCategory="3"
-					  android:title="Прочее"/>
+				<item
+					android:id="@+id/concentrates"
+					android:icon="@drawable/ic_menu_camera"
+					android:orderInCategory="0"
+					android:title="Концентраты"/>
+				<item
+					android:id="@+id/liquors"
+					android:icon="@drawable/ic_menu_gallery"
+					android:orderInCategory="1"
+					android:title="Ликеры"/>
+				<item
+					android:id="@+id/syrups"
+					android:icon="@drawable/ic_menu_slideshow"
+					android:orderInCategory="2"
+					android:title="Сиропы"/>
+				<item
+					android:id="@+id/other"
+					android:icon="@drawable/ic_menu_manage"
+					android:orderInCategory="3"
+					android:title="Прочее"/>
 			</group>
 		</menu>
 	</item>
 
 	<item android:title="Заказ">
 		<menu>
-			<item android:id="@+id/order"
-				  android:icon="@drawable/ic_menu_share"
-				  android:title="Как заказать"/>
-			<item android:id="@+id/delivery"
-				  android:icon="@drawable/ic_menu_send"
-				  android:title="Как получить"/>
+			<item
+				android:id="@+id/order"
+				android:icon="@drawable/ic_menu_share"
+				android:title="Как заказать"/>
+			<item
+				android:id="@+id/delivery"
+				android:icon="@drawable/ic_menu_send"
+				android:title="Как получить"/>
 		</menu>
 	</item>
 

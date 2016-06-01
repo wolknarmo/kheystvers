@@ -8,10 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class ItemsListFragment extends Fragment {
+public class ItemListFragment extends Fragment {
 
 	protected RecyclerView recyclerView;
-	protected MyAdapter adapter;
+	protected RecyclerViewAdapter adapter;
 	protected View rootView;
 
 	@Override
@@ -21,6 +21,5 @@ public class ItemsListFragment extends Fragment {
 		recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 		recyclerView.setAdapter(adapter);
 		return rootView;
-
 	}
 }

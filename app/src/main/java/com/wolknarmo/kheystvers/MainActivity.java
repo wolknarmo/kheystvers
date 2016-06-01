@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.main_activity_layout);
 		drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 		fragmentManager = getFragmentManager();
 
@@ -76,24 +76,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		Fragment fragment;
 		switch (position) {
 			case 0:
-				fragment = new Dummy1();
+				fragment = new ConcentratesFragment();
 				break;
 			case 1:
-				fragment = new Dummy2();
+				fragment = new LiqueursFragment();
 				break;
 			case 2:
-				fragment = new TextFragment();
+				fragment = new SyrupsFragment();
 				break;
 			case 3:
-				fragment = new ImageFragment();
+				fragment = new TextFragment();
 				break;
 			default:
-				fragment = new Dummy1();
+				fragment = new ImageFragment();
 		}
 		FragmentTransaction ft = fragmentManager.beginTransaction();
 		ft.replace(R.id.content, fragment);
 		ft.addToBackStack(null);
-		ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
 		ft.commit();
 	}
 
