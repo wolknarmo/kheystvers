@@ -10,11 +10,8 @@ import com.wolknarmo.kheystvers.R;
 
 public class ImageFragment extends Fragment {
 
-	private View rootView;
-
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		rootView = inflater.inflate(R.layout.image, container, false);
-		return rootView;
+		return inflater.inflate(R.layout.image, container, false);
 	}
 }

@@ -11,14 +11,11 @@ import com.wolknarmo.kheystvers.R;
 
 public class TextFragment extends Fragment {
 
-	private View rootView;
-
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		rootView = inflater.inflate(R.layout.text, container, false);
-		TextView textView = (TextView) rootView.findViewById(R.id.text);
+		TextView textView = (TextView) inflater.inflate(R.layout.text, container, false);
 		textView.setText("WOW!! SUCH FRAGMENT! MANY VIEWS! LOVE, DOGE");
 		textView.setTextSize(50);
-		return rootView;
+		return textView;
 	}
 }
