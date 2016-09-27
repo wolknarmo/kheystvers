@@ -25,20 +25,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
 	@Override
 	public RecyclerViewAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
-		View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view, parent, false);
-		ViewHolder vh = new ViewHolder((CardView) v, new ViewHolder.OnViewHolderClickInterface() {
-			@Override
-			public void onClick(View view) {
-				TextView description = (TextView) view.findViewById(R.id.description);
-				TextView title = (TextView) view.findViewById(R.id.title);
-				Intent intent = new Intent(view.getContext(), DetailActivity.class);
-				intent.putExtra("title", title.getText());
-				intent.putExtra("description", description.getText());
-				view.getContext().startActivity(intent);
-			}
-		});
-		return vh;
+		return new ViewHolder((CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view, parent, false));
 	}
 
 	@Override
@@ -56,25 +43,24 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 		return titles.length;
 	}
 
-	public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+	class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-		public CardView mCardView;
-		public OnViewHolderClickInterface listener;
+		CardView mCardView;
 
-		public ViewHolder(CardView v, OnViewHolderClickInterface l) {
+		ViewHolder(CardView v) {
 			super(v);
 			mCardView = v;
-			listener = l;
 			mCardView.setOnClickListener(this);
 		}
 
 		@Override
 		public void onClick(View view) {
-			listener.onClick(view);
-		}
-
-		public interface OnViewHolderClickInterface {
-			void onClick(View view);
+			TextView description = (TextView) view.findViewById(R.id.description);
+			TextView title = (TextView) view.findViewById(R.id.title);
+			Intent intent = new Intent(view.getContext(), DetailActivity.class);
+			intent.putExtra("title", title.getText());
+			intent.putExtra("description", description.getText());
+			view.getContext().startActivity(intent);
 		}
 	}
 }
