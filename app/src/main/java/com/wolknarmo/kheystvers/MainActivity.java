@@ -14,6 +14,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.wolknarmo.kheystvers.fragments.ConcentratesFragment;
+import com.wolknarmo.kheystvers.fragments.ImageFragment;
+import com.wolknarmo.kheystvers.fragments.LiqueursFragment;
+import com.wolknarmo.kheystvers.fragments.SyrupsFragment;
+import com.wolknarmo.kheystvers.fragments.TextFragment;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 	DrawerLayout drawer;
@@ -24,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main_activity_layout);
+		setContentView(R.layout.main_activity);
 		drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 		fragmentManager = getFragmentManager();
 

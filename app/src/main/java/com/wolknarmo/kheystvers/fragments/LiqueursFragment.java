@@ -1,7 +1,10 @@
-package com.wolknarmo.kheystvers;
+package com.wolknarmo.kheystvers.fragments;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+
+import com.wolknarmo.kheystvers.R;
+import com.wolknarmo.kheystvers.RecyclerViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

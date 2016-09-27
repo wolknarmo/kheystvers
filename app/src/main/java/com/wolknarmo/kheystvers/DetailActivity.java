@@ -15,7 +15,7 @@ public class DetailActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.detail_activity_layout);
+		setContentView(R.layout.detail_activity);
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_toolbar);
 		setSupportActionBar(toolbar);
 

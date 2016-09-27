@@ -1,4 +1,4 @@
-package com.wolknarmo.kheystvers;
+package com.wolknarmo.kheystvers.fragments;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -7,6 +7,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.wolknarmo.kheystvers.R;
+import com.wolknarmo.kheystvers.RecyclerViewAdapter;
 
 public class ItemListFragment extends Fragment {
 
