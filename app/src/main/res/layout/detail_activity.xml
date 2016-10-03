@@ -25,8 +25,7 @@
 				android:id="@+id/toolbar_image"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				android:scaleType="centerCrop"
-				android:src="@mipmap/art"/>
+				android:scaleType="centerCrop"/>
 
 			<android.support.v7.widget.Toolbar
 				android:id="@+id/toolbar_toolbar"
@@ -43,6 +42,7 @@
 		android:id="@+id/item_detail_container"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
+		android:padding="16dp"
 		app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 		<TextView
