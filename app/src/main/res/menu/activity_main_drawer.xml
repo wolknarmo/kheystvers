@@ -5,24 +5,24 @@
 		<menu>
 			<group android:checkableBehavior="single">
 				<item
-					android:id="@+id/concentrates"
+					android:id="@+id/fruit"
 					android:icon="@drawable/ic_menu_camera"
-					android:orderInCategory="0"
-					android:title="Концентраты"/>
-				<item
-					android:id="@+id/liquors"
-					android:icon="@drawable/ic_menu_gallery"
 					android:orderInCategory="1"
-					android:title="Ликеры"/>
+					android:title="Фруктовые сиропы"/>
 				<item
-					android:id="@+id/syrups"
-					android:icon="@drawable/ic_menu_slideshow"
+					android:id="@+id/berry"
+					android:icon="@drawable/ic_menu_gallery"
 					android:orderInCategory="2"
-					android:title="Сиропы"/>
+					android:title="Ягодные сиропы"/>
+				<item
+					android:id="@+id/vegetable"
+					android:icon="@drawable/ic_menu_slideshow"
+					android:orderInCategory="3"
+					android:title="Овощные сиропы"/>
 				<item
 					android:id="@+id/other"
 					android:icon="@drawable/ic_menu_manage"
-					android:orderInCategory="3"
+					android:orderInCategory="4"
 					android:title="Прочее"/>
 			</group>
 		</menu>
@@ -30,14 +30,16 @@
 
 	<item android:title="Заказ">
 		<menu>
-			<item
-				android:id="@+id/order"
-				android:icon="@drawable/ic_menu_share"
-				android:title="Как заказать"/>
-			<item
-				android:id="@+id/delivery"
-				android:icon="@drawable/ic_menu_send"
-				android:title="Как получить"/>
+			<group android:checkableBehavior="single">
+				<item
+					android:id="@+id/order"
+					android:icon="@drawable/ic_menu_share"
+					android:title="Как заказать"/>
+				<item
+					android:id="@+id/delivery"
+					android:icon="@drawable/ic_menu_send"
+					android:title="Как получить"/>
+			</group>
 		</menu>
 	</item>
 

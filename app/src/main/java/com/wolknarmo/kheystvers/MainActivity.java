@@ -14,9 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.wolknarmo.kheystvers.fragments.ConcentratesFragment;
 import com.wolknarmo.kheystvers.fragments.ImageFragment;
-import com.wolknarmo.kheystvers.fragments.LiqueursFragment;
 import com.wolknarmo.kheystvers.fragments.SyrupsFragment;
 import com.wolknarmo.kheystvers.fragments.TextFragment;
 
@@ -57,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		navigationView.setNavigationItemSelectedListener(this);
 
 		if (savedInstanceState == null) {
-			selectItem(0);
+			selectItem(1);
 		}
 	}
 
@@ -82,15 +80,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		Fragment fragment;
 		switch (position) {
 			case 0:
-				fragment = new ConcentratesFragment();
+				fragment = new ImageFragment();
 				break;
 			case 1:
-				fragment = new LiqueursFragment();
-				break;
-			case 2:
 				fragment = new SyrupsFragment();
 				break;
+			case 2:
+				fragment = new TextFragment();
+				break;
 			case 3:
+				fragment = new TextFragment();
+				break;
+			case 4:
 				fragment = new TextFragment();
 				break;
 			default:
