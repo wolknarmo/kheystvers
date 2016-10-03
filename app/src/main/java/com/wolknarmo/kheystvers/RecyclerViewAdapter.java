@@ -1,7 +1,6 @@
 package com.wolknarmo.kheystvers;
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,14 +12,10 @@ import android.widget.TextView;
 import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
-	private String[] titles;
-	private List<Drawable> images;
-	private String[] descriptions;
+	private List<Item> items;
 
-	public RecyclerViewAdapter(String[] titles, List<Drawable> images, String[] descriptions) {
-		this.titles = titles;
-		this.images = images;
-		this.descriptions = descriptions;
+	public RecyclerViewAdapter(List<Item> items) {
+		this.items = items;
 	}
 
 	@Override
@@ -31,16 +26,16 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 	@Override
 	public void onBindViewHolder(ViewHolder holder, int position) {
 		TextView title = (TextView) holder.mCardView.findViewById(R.id.title);
-		title.setText(titles[position]);
+		title.setText(items.get(position).title);
 		ImageView image = (ImageView) holder.mCardView.findViewById(R.id.image);
-		image.setImageDrawable(images.get(position));
+		image.setImageDrawable(items.get(position).image);
 		TextView description = (TextView) holder.mCardView.findViewById(R.id.description);
-		description.setText(descriptions[position]);
+		description.setText(items.get(position).description);
 	}
 
 	@Override
 	public int getItemCount() {
-		return titles.length;
+		return items.size();
 	}
 
 	class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {

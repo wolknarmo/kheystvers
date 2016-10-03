@@ -1,22 +1,94 @@
 <resources>
 	<string name="app_name">Kheystver\'s</string>
 	<string-array name="syrups">
-		<item>Kheystver\'s one</item>
-		<item>Kheystver\'s two</item>
-		<item>Kheystver\'s three</item>
-		<item>Kheystver\'s 42</item>
-		<item>Kheystver\'s 42</item>
-		<item>Kheystver\'s 42</item>
-		<item>Kheystver\'s 42</item>
+		<item>Sunrise</item>
+		<item>Bumblebee</item>
+		<item>Tiger</item>
+		<item>Ruby</item>
+		<item>Sunset</item>
+		<item>Ironhand</item>
+		<item>Harvest</item>
+		<item>Caipirinha</item>
+		<item>Danger</item>
+		<item>Louis de Bourbon</item>
+		<item>Comandante</item>
+		<item>Sunbeam</item>
+		<item>Karelia</item>
+		<item>Marvel</item>
+		<item>Toscana</item>
+		<item>Joy</item>
+		<item>Rapture</item>
+		<item>Desire</item>
+		<item>Crimson</item>
+		<item>Cardinal</item>
+		<item>Byzantium</item>
+		<item>Blast</item>
+		<item>Siberia</item>
+		<item>Velvet</item>
+		<item>Parakeet</item>
+		<item>Al Thamra</item>
+		<item>Sunfruit</item>
+		<item>Festive</item>
 	</string-array>
 	<string-array name="syrups_descriptions">
-		<item>descKheystver\'s one Kheystver\'s one Kheystver\'s one Kheystver\'s one Kheystver\'s one Kheystver\'s one</item>
-		<item>descKheystver\'s two Kheystver\'s two Kheystver\'s two Kheystver\'s two Kheystver\'s two Kheystver\'s two</item>
-		<item>descKheystver\'s three Kheystver\'s three Kheystver\'s three Kheystver\'s three Kheystver\'s three Kheystver\'s three</item>
-		<item>descKheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42</item>
-		<item>descKheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42</item>
-		<item>descKheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42</item>
-		<item>descKheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42 Kheystver\'s 42</item>
+		<item>description Sunrise description Sunrise description Sunrise description Sunrise description Sunrise description Sunrise description Sunrise description Sunrise</item>
+		<item>description Bumblebee description Bumblebee description Bumblebee description Bumblebee description Bumblebee description Bumblebee description Bumblebee description Bumblebee</item>
+		<item>description Tiger description Tiger description Tiger description Tiger description Tiger description Tiger description Tiger description Tiger</item>
+		<item>description Ruby description Ruby description Ruby description Ruby description Ruby description Ruby description Ruby description Ruby</item>
+		<item>description Sunset description Sunset description Sunset description Sunset description Sunset description Sunset description Sunset description Sunset</item>
+		<item>description Ironhand description Ironhand description Ironhand description Ironhand description Ironhand description Ironhand description Ironhand description Ironhand</item>
+		<item>description Harvest description Harvest description Harvest description Harvest description Harvest description Harvest description Harvest description Harvest</item>
+		<item>description Caipirinha description Caipirinha description Caipirinha description Caipirinha description Caipirinha description Caipirinha description Caipirinha description Caipirinha</item>
+		<item>description Danger description Danger description Danger description Danger description Danger description Danger description Danger description Danger</item>
+		<item>description Louis  description Louis  description Louis  description Louis  description Louis  description Louis  description Louis  description Louis de Bourbon</item>
+		<item>description Comandante description Comandante description Comandante description Comandante description Comandante description Comandante description Comandante description Comandante</item>
+		<item>description Sunbeam description Sunbeam description Sunbeam description Sunbeam description Sunbeam description Sunbeam description Sunbeam description Sunbeam</item>
+		<item>description Karelia description Karelia description Karelia description Karelia description Karelia description Karelia description Karelia description Karelia</item>
+		<item>description Marvel description Marvel description Marvel description Marvel description Marvel description Marvel description Marvel description Marvel</item>
+		<item>description Toscana description Toscana description Toscana description Toscana description Toscana description Toscana description Toscana description Toscana</item>
+		<item>description Joy description Joy description Joy description Joy description Joy description Joy description Joy description Joy</item>
+		<item>description Rapture description Rapture description Rapture description Rapture description Rapture description Rapture description Rapture description Rapture</item>
+		<item>description Desire description Desire description Desire description Desire description Desire description Desire description Desire description Desire</item>
+		<item>description Crimson description Crimson description Crimson description Crimson description Crimson description Crimson description Crimson description Crimson</item>
+		<item>description Cardinal description Cardinal description Cardinal description Cardinal description Cardinal description Cardinal description Cardinal description Cardinal</item>
+		<item>description Byzantium description Byzantium description Byzantium description Byzantium description Byzantium description Byzantium description Byzantium description Byzantium</item>
+		<item>description Blast description Blast description Blast description Blast description Blast description Blast description Blast description Blast</item>
+		<item>description Siberia description Siberia description Siberia description Siberia description Siberia description Siberia description Siberia description Siberia</item>
+		<item>description Velvet description Velvet description Velvet description Velvet description Velvet description Velvet description Velvet description Velvet</item>
+		<item>description Parakeet description Parakeet description Parakeet description Parakeet description Parakeet description Parakeet description Parakeet description Parakeet</item>
+		<item>description Al  description Al  description Al  description Al  description Al  description Al  description Al  description Al Thamra</item>
+		<item>description Sunfruit description Sunfruit description Sunfruit description Sunfruit description Sunfruit description Sunfruit description Sunfruit description Sunfruit</item>
+		<item>description Festive description Festive description Festive description Festive description Festive description Festive description Festive description Festive</item>
+	</string-array>
+	<string-array name="syrups_images">
+		<item>@drawable/syrup_sunrise</item>
+		<item>@drawable/syrup_bumblebee</item>
+		<item>@drawable/syrup_tiger</item>
+		<item>@drawable/syrup_ruby</item>
+		<item>@drawable/syrup_sunset</item>
+		<item>@drawable/syrup_ironhand</item>
+		<item>@drawable/syrup_harvest</item>
+		<item>@drawable/syrup_caipirinha</item>
+		<item>@drawable/syrup_danger</item>
+		<item>@drawable/syrup_louis_de_bourbon</item>
+		<item>@drawable/syrup_comandante</item>
+		<item>@drawable/syrup_sunbeam</item>
+		<item>@drawable/syrup_karelia</item>
+		<item>@drawable/syrup_marvel</item>
+		<item>@drawable/syrup_toscana</item>
+		<item>@drawable/syrup_joy</item>
+		<item>@drawable/syrup_rapture</item>
+		<item>@drawable/syrup_desire</item>
+		<item>@drawable/syrup_crimson</item>
+		<item>@drawable/syrup_cardinal</item>
+		<item>@drawable/syrup_byzantium</item>
+		<item>@drawable/syrup_blast</item>
+		<item>@drawable/syrup_siberia</item>
+		<item>@drawable/syrup_velvet</item>
+		<item>@drawable/syrup_parakeet</item>
+		<item>@drawable/syrup_al_thamra</item>
+		<item>@drawable/syrup_sunfruit</item>
+		<item>@drawable/syrup_festive</item>
 	</string-array>
 	<string-array name="concentrates">
 		<item>Kheystver\'s 1K</item>
