@@ -1,6 +1,5 @@
 package com.wolknarmo.kheystvers;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -36,7 +35,7 @@ public class DetailActivity extends AppCompatActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getItemId() == android.R.id.home) {
-			navigateUpTo(new Intent(this, MainActivity.class));
+			onBackPressed();
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
