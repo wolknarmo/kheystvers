@@ -1,5 +1,7 @@
 package com.wolknarmo.kheystvers;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -52,10 +54,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 		public void onClick(View view) {
 			TextView description = (TextView) view.findViewById(R.id.description);
 			TextView title = (TextView) view.findViewById(R.id.title);
+			ImageView image = (ImageView) view.findViewById(R.id.image);
 			Intent intent = new Intent(view.getContext(), DetailActivity.class);
 			intent.putExtra("title", title.getText());
 			intent.putExtra("description", description.getText());
-			view.getContext().startActivity(intent);
+			image.buildDrawingCache();
+			intent.putExtra("image", image.getDrawingCache());
+//			image.destroyDrawingCache();
+			view.getContext().startActivity(intent, ActivityOptions.makeSceneTransitionAnimation((Activity)view.getContext(), image, "toolbar_image").toBundle());
 		}
 	}
 }

@@ -1,5 +1,6 @@
 package com.wolknarmo.kheystvers;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.ActionBar;
@@ -29,6 +30,7 @@ public class DetailActivity extends AppCompatActivity {
 		if (getIntent().getExtras() != null) {
 			getSupportActionBar().setTitle(getIntent().getStringExtra("title"));
 			description.setText(getIntent().getStringExtra("description"));
+			toolbarImage.setImageBitmap((Bitmap) getIntent().getParcelableExtra("image"));
 		}
 	}
 

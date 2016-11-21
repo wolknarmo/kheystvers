@@ -7,28 +7,28 @@
 		<item>Ruby</item>
 		<item>Sunset</item>
 		<item>Ironhand</item>
-		<item>Harvest</item>
-		<item>Caipirinha</item>
-		<item>Danger</item>
-		<item>Louis de Bourbon</item>
-		<item>Comandante</item>
-		<item>Sunbeam</item>
-		<item>Karelia</item>
-		<item>Marvel</item>
-		<item>Toscana</item>
-		<item>Joy</item>
-		<item>Rapture</item>
-		<item>Desire</item>
-		<item>Crimson</item>
-		<item>Cardinal</item>
-		<item>Byzantium</item>
-		<item>Blast</item>
-		<item>Siberia</item>
-		<item>Velvet</item>
-		<item>Parakeet</item>
-		<item>Al Thamra</item>
-		<item>Sunfruit</item>
-		<item>Festive</item>
+		<!--<item>Harvest</item>-->
+		<!--<item>Caipirinha</item>-->
+		<!--<item>Danger</item>-->
+		<!--<item>Louis de Bourbon</item>-->
+		<!--<item>Comandante</item>-->
+		<!--<item>Sunbeam</item>-->
+		<!--<item>Karelia</item>-->
+		<!--<item>Marvel</item>-->
+		<!--<item>Toscana</item>-->
+		<!--<item>Joy</item>-->
+		<!--<item>Rapture</item>-->
+		<!--<item>Desire</item>-->
+		<!--<item>Crimson</item>-->
+		<!--<item>Cardinal</item>-->
+		<!--<item>Byzantium</item>-->
+		<!--<item>Blast</item>-->
+		<!--<item>Siberia</item>-->
+		<!--<item>Velvet</item>-->
+		<!--<item>Parakeet</item>-->
+		<!--<item>Al Thamra</item>-->
+		<!--<item>Sunfruit</item>-->
+		<!--<item>Festive</item>-->
 	</string-array>
 	<string-array name="syrups_descriptions">
 		<item>description Sunrise description Sunrise description Sunrise description Sunrise description Sunrise description Sunrise description Sunrise description Sunrise</item>
